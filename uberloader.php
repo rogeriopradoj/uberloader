@@ -154,7 +154,7 @@
                 if (in_array($item, array('.', '..'))) {
                     continue;
                 }
-                $item_path = "$path/$item";
+                $item_path = $path . DIRECTORY_SEPARATOR . $item;
                 if (is_dir($item_path)) {
                     $result = $this->_search($item_path, $target_class_name);
                     if ($result !== false) {
@@ -284,7 +284,7 @@
                 throw new UberloaderException("Cache directory does not exist or is not writable");
             }
             $this->_cache_directory = $cache_directory;
-            $this->_cache_file = $cache_directory . '/' . self::CACHE_FILE_NAME;
+            $this->_cache_file = $cache_directory . DIRECTORY_SEPARATOR . self::CACHE_FILE_NAME;
 
             // Set up the cache
             if (file_exists($this->_cache_file)) {
