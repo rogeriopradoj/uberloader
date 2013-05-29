@@ -1,0 +1,14 @@
+{
+    "name": "rogeriopradoj/uberloader",
+    "description": "A way to install j4mie/uberloader via composer",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Rogerio Prado de Jesus",
+            "email": "rogeriopradoj@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">5.2"
+    }
+}
